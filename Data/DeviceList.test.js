@@ -32,6 +32,7 @@ export default {
     // "mn60o1u7xv8qh8f1": { leds: [1,2,3] },
     "stmkcsykq3kheboa": { leds: [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16], name: "Battletron Light Bar" },
     "yrg6a649fkozp1hw": { leds: [1], name: "Battletron Ball Light" },
+    "keyj3w8cmutjmwk5": { leds: [], name: "Generic LED Strip" },
     // "m2jqc9ocwnxdsgs8": { leds: [1,2,3] },
     // "8cml7rj948sagivg": { leds: [1,2,3] },
     // "hy57lewrecoee6hv": { leds: [1,2,3] },
@@ -40,3 +41,50 @@ export default {
     // "cjhv8tkjk7qos3jz": { leds: [1,2,3] },
     // "xxazcsrqorqcxpui": { leds: [1,2,3] },
 }
+
+export const TestDevices = [
+    {
+        id: 'bfbe7bd231444751090bsq',
+        name: 'Leds habitación',
+        ip: '192.168.1.131',
+        key: 'dHb;IQrWT&tv?XCi',
+        version: '3.5',
+        productKey: 'keyj3w8cmutjmwk5',
+        leds: 40,
+        type: 'LED Strip',
+        enabled: true
+    },
+    {
+        id: 'bfbebb82be7220f985rawa',
+        name: 'Escritorio',
+        ip: '192.168.1.130',
+        key: 'EvKXuTB^A0(T`quq',
+        version: '3.5',
+        productKey: 'keyj3w8cmutjmwk5',
+        leds: 36,
+        type: 'LED Strip',
+        enabled: true
+    },
+    {
+        id: 'bfde5007394a05833ahsda',
+        name: 'Leds habitación 2',
+        ip: '192.168.1.133',
+        key: '81u+<zg)h)oNPVo/',
+        version: '3.5',
+        productKey: 'keyj3w8cmutjmwk5',
+        leds: 40,
+        type: 'LED Strip',
+        enabled: true
+    },
+    {
+        id: 'bfafad43febddb888apxbj',
+        name: 'Monitor',
+        ip: '192.168.1.129',
+        key: 'OE4lO]Id<-ws`d;9',
+        version: '3.5',
+        productKey: 'keyj3w8cmutjmwk5',
+        leds: 72,
+        type: 'LED Strip',
+        enabled: true
+    }
+];

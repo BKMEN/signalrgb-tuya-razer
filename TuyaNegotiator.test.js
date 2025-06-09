@@ -51,6 +51,7 @@ export default class TuyaNegotiator extends TuyaEncryptor
     {
         if (!this.devices.hasOwnProperty(tuyaDevice.crc))
         {
+            service.log(`Adding device ${tuyaDevice.id} to negotiator`);
             if (!this.broadcastIp) this.setBroadcastIp(tuyaDevice.ip);
 
             this.devices[tuyaDevice.crc] = tuyaDevice;
@@ -133,6 +134,7 @@ export default class TuyaNegotiator extends TuyaEncryptor
 
     negotiateDevice(deviceBatchData)
     {
+        service.log('Negotiating device batch: ' + deviceBatchData.map(d => d.id).join(', '));
         // Create random nonce in hex
         const nonce = this.randomHexBytes(12);
 
@@ -184,6 +186,8 @@ export default class TuyaNegotiator extends TuyaEncryptor
         let data = new Uint8Array(packet.buffer);
         if (data.length < 64) return;
 
+        service.log('Received packet: ' + this.byteArrayToHex(data));
+
         // let byteArray = this.hexToByteArray(data);
         // Razer message:
         let message = new TuyaMessage(data);
@@ -208,6 +212,7 @@ export default class TuyaNegotiator extends TuyaEncryptor
 
     negotiateSessionKey(device, message)
     {
+        service.log(`Negotiating session key for device ${device.id}`);
         const localKeyHex = this.hexFromString(device.localKey, 16);
 
         service.log('Hexified local key ' + localKeyHex);
