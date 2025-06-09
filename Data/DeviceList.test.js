@@ -40,3 +40,50 @@ export default {
     // "cjhv8tkjk7qos3jz": { leds: [1,2,3] },
     // "xxazcsrqorqcxpui": { leds: [1,2,3] },
 }
+
+export const TestDevices = [
+    {
+        id: 'bfbe7bd231444751090bsq',
+        name: 'Leds habitación',
+        ip: '192.168.1.131',
+        key: 'dHb;IQrWT&tv?XCi',
+        version: '3.5',
+        productKey: 'keyj3w8cmutjmwk5',
+        leds: 40,
+        type: 'LED Strip',
+        enabled: true
+    },
+    {
+        id: 'bfbebb82be7220f985rawa',
+        name: 'Escritorio',
+        ip: '192.168.1.130',
+        key: 'EvKXuTB^A0(T`quq',
+        version: '3.5',
+        productKey: 'keyj3w8cmutjmwk5',
+        leds: 36,
+        type: 'LED Strip',
+        enabled: true
+    },
+    {
+        id: 'bfde5007394a05833ahsda',
+        name: 'Leds habitación 2',
+        ip: '192.168.1.133',
+        key: '81u+<zg)h)oNPVo/',
+        version: '3.5',
+        productKey: 'keyj3w8cmutjmwk5',
+        leds: 40,
+        type: 'LED Strip',
+        enabled: true
+    },
+    {
+        id: 'bfafad43febddb888apxbj',
+        name: 'Monitor',
+        ip: '192.168.1.129',
+        key: 'OE4lO]Id<-ws`d;9',
+        version: '3.5',
+        productKey: 'keyj3w8cmutjmwk5',
+        leds: 72,
+        type: 'LED Strip',
+        enabled: true
+    }
+];
